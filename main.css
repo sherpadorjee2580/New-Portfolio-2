@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #eeeaea;
+}
+
+.circle {
+  box-shadow: 0 0 1rem 1rem rgba(255, 255, 255, 0.5);
+  height: 100rem;
+  width: 70rem;
+  background-color: #e0dede;
+  position: absolute;
+  right: 35rem;
+  top: 25rem;
+  border-radius: 50%;
+}
+
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolio-container__nav {
+  padding: 2rem 4rem;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  background-color: #444;
+  color: white;
+  width: 100%;
+}
+.portfolio-container__nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.portfolio-container__nav-logo {
+  background-image: url("/images/Dorji_Sherpa-removebg-preview.png");
+  height: 14rem;
+  width: 14rem;
+  background-size: cover;
+}
+.portfolio-container__nav-logo:hover {
+  border-radius: 50%;
+  border: 2px solid #777;
+}
+.portfolio-container__nav-middle {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-container__nav-lists {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.portfolio-container__nav-lists li a {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+.portfolio-container__nav-lists li :hover {
+  color: rgb(254, 109, 56);
+}
+.portfolio-container__nav-right {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-container__nav-right button {
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.portfolio-container__main {
+  padding: 25rem 40rem;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+}
+.portfolio-container__main-info {
+  gap: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-container__main-info h3 {
+  font-size: 5rem;
+}
+.portfolio-container__main-info h2 {
+  font-size: 7rem;
+  line-height: 8rem;
+}
+.portfolio-container__main-info p {
+  color: #777;
+  font-size: 3rem;
+}
+.portfolio-container__main-buttons button {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  border: none;
+  color: white;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.portfolio-container__main-buttons button.hire {
+  background-color: black;
+}
+.portfolio-container__main-buttons button.experience {
+  background-color: orangered;
+}
+.portfolio-container__main-img {
+  top: -30rem;
+  right: -10rem;
+  position: absolute;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.portfolio-container__main-img img {
+  height: 170rem;
+}
+.portfolio-container__main.dark {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  padding: 30rem 40rem;
+}
+.portfolio-container__main.dark button {
+  box-shadow: 0 0 1rem 0.5rem rgba(255, 255, 255, 0.5);
+}
+.portfolio-container__main.dark p {
+  color: white;
+}
+.portfolio-container__main.dark button.hire {
+  background-color: white;
+  color: black;
+}
+.portfolio-container__main.dark span {
+  border: none;
+  box-shadow: 0 0 2rem 0.5rem rgb(255, 255, 255);
+}
+.portfolio-container__main.dark .circle {
+  box-shadow: 0 0 2rem 0.5rem rgb(240, 50, 50);
+  top: 18rem;
+}
+.portfolio-container__form {
+  padding-top: 10rem;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio-container__form h2 {
+  font-size: 5rem;
+}
+.portfolio-container__form h2 span {
+  color: orangered;
+}
+.portfolio-container__form input {
+  height: 9rem;
+  width: 80rem;
+  margin: 2rem;
+  border: 1px solid #999;
+  background-color: #f3f1f1;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem 0.5rem rgba(122, 121, 121, 0.355);
+  font-size: 3rem;
+  padding-left: 2rem;
+  text-transform: uppercase;
+}
+.portfolio-container__form textarea {
+  height: 30rem;
+  width: 80rem;
+  margin: 2rem;
+  border: 1px solid #999;
+  background-color: #f3f1f1;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem 0.5rem rgba(122, 121, 121, 0.355);
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.portfolio-container__form input,
+.portfolio-container__form textarea:focus {
+  outline: none;
+}
+.portfolio-container__form button {
+  padding: 1rem 5rem;
+  font-size: 4rem;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+}
+.portfolio-container__footer {
+  overflow: hidden;
+  gap: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 15%;
+  background-color: black;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+}
+.portfolio-container__footer-services ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-color: orangered;
+  transform: scaleX(100%);
+  text-decoration-thickness: 0.3rem;
+}
+.portfolio-container__footer-icon, .portfolio-container__footer-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-container__footer-icon ul, .portfolio-container__footer-services ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.portfolio-container__footer-icon ul li, .portfolio-container__footer-services ul li {
+  transition: 0.5s ease-in-out;
+  margin: 0 2rem;
+}
+.portfolio-container__footer-icon ul li a, .portfolio-container__footer-services ul li a {
+  color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.portfolio-container__footer-icon ul li a i, .portfolio-container__footer-services ul li a i {
+  padding: 0.8rem;
+  border: 5px solid orangered;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 1rem rgba(255, 69, 0, 0.5);
+}
+.portfolio-container__footer-last {
+  font-size: 1.8rem;
+}/*# sourceMappingURL=main.css.map */
